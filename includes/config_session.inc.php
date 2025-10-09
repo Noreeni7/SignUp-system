@@ -14,7 +14,7 @@ ini_set('session.use_strict_mode',1);
 // --- Set session cookie settings for better security and control ---
 session_set_cookie_params([
     'lifetime' => 1800,
-    'domain' => 'ocalhost',
+    'domain' => 'localhost',
     'path' => '/',
     'secure' => true,
     // Helps protect against JavaScript attacks (like XSS).

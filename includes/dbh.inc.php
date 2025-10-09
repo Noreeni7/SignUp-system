@@ -23,7 +23,7 @@ try {
     // This line tries to open a connection to your MySQL database.
     // The 'mysql:host=...' part tells PHP which database type and server to connect to.
     // The 'dbname=...' part specifies which database to use.
-    $pdo = new PDO ("mysql:host=$host;dbname=$dbname",$dbusername,$dbpassword);
+    $pdo = new PDO ("mysql:host=$servername;dbname=$dbname",$dbusername,$dbpassword);
 
     // Tell PDO to throw an exception (error message) if something goes wrong.
     // This helps you see detailed errors instead of silent failures

@@ -22,3 +22,35 @@ session_set_cookie_params([
     'httponly' => true
 ]);
 
+// A session allows the website to remember the logged-in user across pages.
+session_start();
+
+
+// --- Check if it's time to regenerate the session ID ---
+// Regenerating the session ID helps prevent hackers from stealing it
+// and pretending to be the user (this is called session fixation).
+if (!isset($_SESSION["last_regeneration"])) {
+    // If this is the first time we are checking, regenerate immediately.
+    regenerate_session_id();
+} else {
+    // Set the time interval for regeneration.
+    // 60 * 30 = 1800 seconds = 30 minutes.
+    $interval = 60 * 30;
+
+    // Check how long it's been since the last regeneration.
+    // time() gives the current time in seconds.
+    // If 30 minutes have passed, regenerate the session ID again.
+    if (time() - $_SESSION["last_regeneration"] >= $interval) {
+        regenerate_session_id();
+    }
+}
+
+// --- Function to regenerate the session ID safely ---
+function regenerate_session_id() {
+    // Create a new session ID and delete the old one.
+    // This helps keep your session secure (prevents stealing or reuse of old IDs).
+    session_regenerate_id();
+
+    // Store the current time so we know when we last regenerated.
+    $_SESSION["last_regeneration"] = time();
+}

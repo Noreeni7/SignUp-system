@@ -47,11 +47,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         if ($errors) {
             $_SESSION["signup_errors"] = $errors;
             header("Location: ../index.php");
-            die();
         }
 
-        // If no errors → Create user
-create_user($pdo, $username, $password, $email);
       
 
     } catch (PDOException $e) {

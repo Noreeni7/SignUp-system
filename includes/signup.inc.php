@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $errors["empty_input"] = "Fill in all fields!";
         }
 
-        if (is_email_invalid ($email)) {
+        if (is_email_invalid($email)) {
             $errors["invalid_email"] = "Email is invalid!";
         }
 
@@ -47,9 +47,18 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         if ($errors) {
             $_SESSION["signup_errors"] = $errors;
             header("Location: ../index.php");
+            die();
         }
 
-      
+        create_user($pdo, $username, $password, $email);
+
+        header("Location: ../index.php?signup=success");
+
+        $pdo = null;
+        $stmt = null;
+
+        die();
+
 
     } catch (PDOException $e) {
         die("Query failed: " . $e->getMessage());

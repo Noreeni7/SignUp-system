@@ -14,7 +14,7 @@ $dbname = 'signup_system_database';
 $dbusername = 'root';
 
 // The password for the database user.
-$dbpassword ='';
+$dbpassword ='Sbing254';
 
 // --- Try connecting to the database using PDO (PHP Data Objects) ---
 try {

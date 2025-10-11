@@ -5,7 +5,7 @@
 // signup_view.inc.php → shows signup errors or success messages on the page
 require_once 'includes/config_session.inc.php';
 require_once 'includes/signup_view.inc.php';
-
+require_once 'includes/login_view.inc.php';
 ?>
 
 <!DOCTYPE html>
@@ -31,6 +31,10 @@ require_once 'includes/signup_view.inc.php';
                 <input type="text" name="pwd" placeholder="Password">
                 <button class="btn btn-dark px-5 py-2 mt-2">Login</button>
             </form>
+
+        <?php
+        check_login_errors();
+        ?>
 
         </div>
 

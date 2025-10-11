@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             die();
         }
 
-        header("Location: ../index.php?ogin=success");
+        header("Location: ../index.php?login=success");
         $pdo = null;
         $stmt = null;
 

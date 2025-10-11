@@ -60,7 +60,7 @@ require_once 'includes/login_view.inc.php';
         <div class="text-center">
             <h3 class="mt-4">Logout</h3>
 
-            <form action="includes/login.inc.php" method="post" class="d-flex flex-column align-items-center gap-1 fs-5">
+            <form action="includes/logout.inc.php" method="post" class="d-flex flex-column align-items-center gap-1 fs-5">
                 <button class="btn btn-dark px-5 py-2 mt-2">Logout</button>
             </form>
 

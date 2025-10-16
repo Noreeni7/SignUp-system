@@ -1,5 +1,7 @@
 <?php
 
+// ============================== HANDLES SIGNUP VALIDATION AND USER CREATION LOGIC ===============================
+
 declare(strict_types=1);
 
 function is_input_empty(string $username, string $password, string $email) {

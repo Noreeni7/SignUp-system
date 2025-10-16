@@ -1,4 +1,5 @@
 <?php
+// ================================ DISPLAYS LOGIN ERRORS OR SUCCESS MESSAGES =============================
 
 declare(strict_types=1);
 

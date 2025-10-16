@@ -1,4 +1,5 @@
 <?php
+// ==================== HANDLES DATABASE TASKS FOR SIGNUP: CHECKS EXISTING USERS AND ADDS NEW ONES SECURELY ===========
 
 // --- Enable strict typing mode ---
 // This tells PHP to be strict about the types of data passed to functions.

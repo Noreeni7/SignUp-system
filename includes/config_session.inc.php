@@ -1,4 +1,5 @@
 <?php
+// ================================ HANDLES SECURE SESSION SETUP AND ID REGENERATION ============================
 
 // --- Secure session configuration ---
 

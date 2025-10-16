@@ -1,4 +1,5 @@
 <?php
+// =========================== MAIN PAGE DISPLAYING FORMS ============================
 
 // Include session setup and signup error display files
 // config_session.inc.php → starts or configures sessions so we can store messages

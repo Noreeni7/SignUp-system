@@ -1,4 +1,5 @@
 <?php
+// ======================== PROCESSES SIGNUP FORM INPUTS AND HANDLES USER REGISTRATION LOGIC ===================
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $username = $_POST["username"];

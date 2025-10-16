@@ -1,4 +1,5 @@
 <?php
+// ============================= HANDLES USER DATA FETCHING FROM DATABASE FOR LOGIN ============================
 
 declare(strict_types=1);
 

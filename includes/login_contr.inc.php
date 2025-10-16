@@ -1,4 +1,5 @@
 <?php
+// ============================== HANDLES LOGIN VALIDATION LOGIC AND PASSWORD CHECKS ==============================
 
 declare(strict_types=1);
 

@@ -1,6 +1,7 @@
 <?php
+// ========================= DISPLAYS SIGNUP ERROR OR SUCCESS MESSAGES ON THE PAGE ========================
 
-declare(strict_types=1);
+declare(strict_types = 1);
 
 function check_signup_errors()
 {

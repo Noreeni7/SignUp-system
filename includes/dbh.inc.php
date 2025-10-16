@@ -1,5 +1,5 @@
-
 <?php
+// ================================ HANDLES DATABASE CONNECTION USING PDO =============================
 
 // --- Database connection setup ---
 
